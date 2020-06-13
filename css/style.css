@@ -109,6 +109,11 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(0, 0, 0, 0.7);
   z-index: 2;
 }
+@media screen and (max-width: 480px) {
+  #fh5co-aside .overlay {
+    background: rgba(0, 0, 0);
+  }
+}
 #fh5co-aside h2 {
   color: #fff;
 }
@@ -243,14 +248,24 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .aside-toggle a, .back-to-home a {
-    width: 80px;
-    height: 80px;
     line-height: 80px;
+    font-size: 9px;
+    width: 50px; 
+    height: 50px;
   }
   .aside-toggle a span, .aside-toggle a em, .back-to-home a span, .back-to-home a em {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     line-height: 80px;
+  }
+  .aside-toggle a em, .back-to-home a em{
+    top: -13px;
+    line-height: 80px;
+    z-index: 1;
+    font-size: 6px;
+  }
+  .aside-toggle a span, .back-to-home a span{
+    font-size: 0px;
   }
 }
 
